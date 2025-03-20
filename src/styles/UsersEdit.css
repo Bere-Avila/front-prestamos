@@ -1,0 +1,84 @@
+/* Contenedor del formulario de edición de usuario */
+.edit-user-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #6a5acd, #8a2be2); /* Morado y azul */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Título del formulario */
+.edit-user-container h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.edit-user-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: stretch;
+  align-items: center;
+}
+
+/* Estilo de los campos de entrada y selección */
+.edit-user-form input,
+.edit-user-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #6a5acd; /* Morado claro */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Estilo cuando el campo está enfocado */
+.edit-user-form input:focus,
+.edit-user-form select:focus {
+  border-color: #8a2be2; /* Morado más intenso para el enfoque */
+}
+
+/* Estilo para los campos inválidos */
+.edit-user-form input:invalid,
+.edit-user-form select:invalid {
+  border-color: #e74c3c;  /* Color de borde en rojo para campos inválidos */
+}
+
+/* Botón de envío */
+.edit-user-form button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #6a5acd; /* Morado claro */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+/* Hover y efecto del botón */
+.edit-user-form button:hover {
+  background-color: #8a2be2; /* Morado más intenso en hover */
+  transform: scale(1.05);
+}
+
+/* Responsividad: Ajustar para pantallas pequeñas */
+@media (max-width: 768px) {
+  .edit-user-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .edit-user-form {
+    grid-template-columns: 1fr; /* Los campos se apilan verticalmente */
+  }
+}

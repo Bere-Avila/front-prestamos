@@ -1,0 +1,78 @@
+.usuarios-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #6a5acd, #8a2be2); /* Morados y azules */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.usuarios-table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.usuarios-table th,
+.usuarios-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.usuarios-table th {
+  background-color: #4b0082; /* Color morado oscuro */
+  color: white;
+  font-weight: bold;
+}
+
+.usuarios-table tr:nth-child(even) {
+  background-color: #e0d4ff; /* Morado claro para las filas pares */
+}
+
+.usuarios-table tr:hover {
+  background-color: #d1c0f2; /* Morado más suave en el hover */
+}
+
+/* Estilos de los botones */
+button {
+  padding: 10px 18px;
+  font-size: 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: #4b0082; /* Morado oscuro */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #6a5acd; /* Morado más claro en hover */
+}
+
+.delete-button {
+  background-color: #6a5acd; /* Morado más claro */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #8a2be2; /* Morado más intenso en hover */
+}
